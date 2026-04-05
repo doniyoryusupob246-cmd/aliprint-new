@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: #f1f1f1;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 15px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ababab;
+  color: #fff;
+  border-radius: 50px;
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: 1px !important;
+}
+
+.partners__slider {
+  padding: 20px 0 !important;
+}
+
+.partners__slider .swiper-slide {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.aksessuar__slider .swiper-wrapper {
+  display: flex !important;
+  justify-content: center;
+}

@@ -1,0 +1,245 @@
+.productSlider {
+  &__nav {
+    text-transform: uppercase;
+    width: 115px !important;
+    height: 35px !important;
+    background-color: #f1f1f1;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.12), -9px -9px 15px #ffffff;
+    border-radius: 14px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      box-shadow: inset 4px 4px 15px rgba(0, 0, 0, 0.12), inset -9px -9px 15px #ffffff;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &-title {
+      font-family: 'Deutschlander';
+      font-size: 280px;
+      color: #ce1212;
+      font-weight: 400;
+      line-height: 200px;
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: column;
+      span {
+        font-family: 'Oswald';
+        font-size: 40px;
+        line-height: 30px;
+        letter-spacing: 50px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &-text {
+      font-size: 16px;
+      width: 350px;
+      margin-bottom: 10px;
+    }
+
+    &-btn {
+      width: 150px;
+      height: 40px;
+      border-radius: 10px;
+      border: 0;
+      font-size: 14px;
+      font-family: 'Oswald', sans-serif;
+      cursor: pointer;
+      font-weight: 600;
+      text-transform: uppercase;
+      box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.12), -9px -9px 15px #ffffff;
+      margin-top: 10px;
+
+      &:hover {
+        box-shadow: inset 4px 4px 15px rgba(0, 0, 0, 0.12), inset -9px -9px 15px #ffffff;
+      }
+    }
+    &-img-btn {
+      display: none;
+    }
+  }
+}
+
+.mySwiper {
+  margin-bottom: 40px !important;
+  padding: 20px 20px !important;
+}
+
+@media (max-width: 1063px) {
+  .productSlider {
+    &__item {
+      &-title {
+        font-size: 230px;
+        span {
+          font-size: 35px;
+          letter-spacing: 39px;
+        }
+      }
+
+      &-img {
+        max-width: 430px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .productSlider {
+    &__item {
+      &-title {
+        font-size: 150px;
+        line-height: 120px;
+        span {
+          font-size: 27px;
+          letter-spacing: 23px;
+        }
+      }
+
+      &-text {
+        font-size: 14px;
+        width: 250px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .productSlider {
+    &__item {
+      &-title {
+        font-size: 100px;
+        line-height: 80px;
+        span {
+          letter-spacing: 11px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .productSlider {
+    &__item {
+      &-text {
+        width: 180px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .mySwiper {
+    display: none !important;
+  }
+  .productSlider {
+    margin-bottom: 100px;
+
+    &__nav {
+      width: 100px !important;
+      height: 28px !important;
+      border-radius: 7px;
+      font-size: 15px;
+    }
+    &__inner {
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+    &__item {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: #f1f1f1;
+      box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.12), -9px -9px 15px #ffffff;
+      height: 320px;
+      width: 300px;
+      border-radius: 10px;
+      margin: 0 auto;
+      &-img {
+        max-width: 200px;
+        order: 1;
+      }
+      &-title {
+        font-family: 'Oswald', sans-serif;
+        font-size: 25px;
+        text-align: center;
+        line-height: 23px;
+        span {
+          text-align: center;
+          letter-spacing: 5px;
+          font-size: 19px;
+        }
+      }
+
+      &-btn {
+        display: none;
+      }
+
+      &-text {
+        display: none;
+      }
+      &-img-btn {
+        display: block;
+        width: 150px;
+        height: 30px;
+        margin: 0 auto;
+        border: 0;
+        border-radius: 10px;
+        font-size: 14px;
+        font-family: 'Oswald', sans-serif;
+        cursor: pointer;
+        font-weight: 600;
+        text-transform: uppercase;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.12), -9px -9px 15px #ffffff;
+        text-decoration: none;
+        color: #000;
+      }
+    }
+  }
+  .mySwiper {
+    margin-bottom: 0px !important;
+    padding: 20px 20px !important;
+  }
+}
+
+@media (max-width: 357px) {
+  .productSlider {
+    &__item {
+      width: 250px;
+      height: 250px;
+
+      &-title {
+        font-size: 20px;
+      }
+
+      &-img {
+        max-width: 150px;
+      }
+
+      &-img-btn {
+        width: 120px;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.mySwiper {
+  .swiper-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+  }
+}
