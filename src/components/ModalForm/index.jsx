@@ -30,7 +30,7 @@ const ModalForm = ({ modal, setModal, nameProduct }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const botToken = '7407951644:AAEQe05C1zAxh82HkVSqQ7H8o-3Oxf2Pj5w';
+    const botToken = '7407951644:AAFexaIDw0rUcEkwCYGgoXgmYivVl8CI2fE';
     const chatID = -4229343235;
     const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
     const text = `**Имя:** ${nameForm}\n**Телефон:** ${phoneForm} \n**Сообщения:** ${descForm}\n**Продукт:** ${nameProduct}`;
